@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Proiect PAW">
+	  <meta name="keywords" content="Proiect PAW">
+  	<meta name="author" content="Pistritu Laurentiu">
+    <title>Contul meu</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Market</span> Online</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="cos.html">Cosul meu</a></li>
+            <li><a href="cont.html">Contul meu</a></li>
+            <li><a href="meniu.html">Meniu</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+
+
+
+    <div id="fullscreen_bg" class="fullscreen_bg"/>
+     <form class="form-signin">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="text-center">
+                          Adauga un produs</h3>
+                        <form class="form form-signup" role="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Nume produs" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                                <input type="Text" class="form-control" placeholder="Descriere" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></span>
+                                <input type="Text" class="form-control" placeholder="Cantitate" />
+                            </div>
+
+
+                    </div>
+
+
+
+
+
+                    <form class="container" id="form1" enctype="multipart/form-data" method="post" action="Upload.aspx">
+                        <div class="row setup-content" id="step-1">
+                            <div class="col-xs-12">
+                                <div class="col-md-12 well text-center">
+
+                          <label for="fileToUpload">Adaugati imaginea produsului</label><br />
+                          <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
+                        </div>
+                        <div id="fileName"></div>
+                        <div id="fileSize"></div>
+                        <div id="fileType"></div>
+                        <div class="row">
+                          <input type="button" onclick="uploadFile()" value="Incarca"  />
+                        </div>
+                        <div id="progressNumber"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                      </form>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    </div>
+
+    <footer>
+      <p>Market online, Pistritu &copy; 2017</p>
+    </footer>
+  </body>
+</html>
